@@ -1,0 +1,2 @@
+data/mersenne_prime_labelled.txt filter=lfs diff=lfs merge=lfs -text
+data/mersenne_prime.txt filter=lfs diff=lfs merge=lfs -text
