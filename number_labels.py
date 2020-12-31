@@ -4,8 +4,8 @@ import functools
 
 import num2words
 
-__dir__ = os.path.dirname(os.path.realpath(__file__))
-NUMBER_LABELS = json.load(open(__dir__ + "/number_labels.json"))
+_dir = os.path.dirname(os.path.realpath(__file__))
+NUMBER_LABELS = json.load(open(_dir + "/number_labels.json"))
 
 def number_label(label_number: int) -> str:
     """
@@ -25,7 +25,7 @@ def number_label(label_number: int) -> str:
     while _result:
         remainder = _result % 1000
         output = NUMBER_LABELS[remainder] + output
-        _result = int(_result / 1000)
+        _result = _result // 1000
 
     return output + "on"
 
