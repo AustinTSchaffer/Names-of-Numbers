@@ -12,6 +12,9 @@ def number_label(label_number: int) -> str:
     Returns the label for the specified "group of 3"
 
     TODO: Clarify language. What is a label? How can you visualize it?
+    - http://mrob.com/pub/math/largenum.html#chuquet
+    - http://mrob.com/pub/math/ln-notes1-2.html#adhoc_chuquet
+    - http://mrob.com/pub/math/ln-notes1-2.html#chuquet_origins
     """
 
     if label_number == 0:
